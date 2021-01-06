@@ -239,7 +239,7 @@ func websocketHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	go func() {
-		rtcpBuf := make([]byte, 1500)
+		rtcpBuf := make([]byte, 1200)
 		for {
 			if _, _, rtcpErr := transceiverVideo.Sender().Read(rtcpBuf); rtcpErr != nil {
 				return
