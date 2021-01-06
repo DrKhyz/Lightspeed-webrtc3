@@ -1,4 +1,4 @@
-module github.com/gpl/lightspeed-webrtc2
+module github.com/gpl/Lightspeed-webrtc3
 
 go 1.15
 
